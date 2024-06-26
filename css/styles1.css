@@ -140,27 +140,35 @@ main .menu .menu1 .entrees h1 {
   margin: 0px;
 }
 main .menu .menu1 .entrees .box {
+  overflow: hidden;
+  position: relative;
   border-radius: 15.043px;
   background: var(--White, #FFF);
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   animation: boxfadein 2s ease-out;
 }
 @keyframes boxfadein {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
   }
+}
+main .menu .menu1 .entrees .box .check {
+  border-radius: 0px 15.043px 15.043px 0px;
+  background-color: #63E6BE;
+  width: 20px;
+  transform: translateX(50px);
 }
 main .menu .menu1 .entrees .box .txt {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 5px;
+  margin: 15px;
 }
 main .menu .menu1 .entrees .box .txt h2 {
   margin: 0px;
@@ -201,6 +209,12 @@ main .menu .menu1 .entrees .box .txt .euro p {
   font-weight: 700;
   line-height: normal;
   margin: 0%;
+  display: inline-block;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+main .menu .menu1 .entrees .box .txt .euro p:hover {
+  transform: translateX(-100px);
 }
 main .menu .menu1 #commander1 {
   display: flex;
