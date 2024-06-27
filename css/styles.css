@@ -166,8 +166,8 @@ nav i {
   transition: all 450ms;
 }
 .reserveh3:hover {
-  transform: scale(1.13);
-  background-color: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  transform: scale(1.02);
+  opacity: 0.8;
 }
 
 .reserveh3 h3 {
@@ -421,6 +421,7 @@ nav i {
   right: 28px;
   top: 23px;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

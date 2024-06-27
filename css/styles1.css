@@ -99,6 +99,7 @@ main .menu .la-palette .icon .fa-heart {
 }
 main .menu .la-palette .icon .fa-solidd {
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -147,7 +148,7 @@ main .menu .menu1 .entrees .box {
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  animation: boxfadein 2s ease-out;
+  animation: boxfadein 3s ease-out;
 }
 @keyframes boxfadein {
   0% {
@@ -157,11 +158,42 @@ main .menu .menu1 .entrees .box {
     opacity: 1;
   }
 }
+main .menu .menu1 .entrees .box .checkk {
+  display: none;
+}
 main .menu .menu1 .entrees .box .check {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  transform: translateX(45px);
+  cursor: pointer;
+  transition: transform 80ms ease-in-out 80ms;
+}
+main .menu .menu1 .entrees .box .check:hover {
+  transform: translateX(0px);
+}
+main .menu .menu1 .entrees .box .check p {
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
+  height: 18px;
+  margin-top: 42px;
+}
+main .menu .menu1 .entrees .box .check .check1 {
+  position: relative;
   border-radius: 0px 15.043px 15.043px 0px;
   background-color: #63E6BE;
-  width: 20px;
-  transform: translateX(50px);
+  width: 45px;
+}
+main .menu .menu1 .entrees .box .check .check1 .fa-circle-check {
+  position: absolute;
+  left: 13px;
+  top: 34px;
 }
 main .menu .menu1 .entrees .box .txt {
   display: flex;
@@ -169,6 +201,8 @@ main .menu .menu1 .entrees .box .txt {
   width: 100%;
   gap: 5px;
   margin: 15px;
+  margin-right: 0px;
+  overflow: hidden;
 }
 main .menu .menu1 .entrees .box .txt h2 {
   margin: 0px;
@@ -183,12 +217,7 @@ main .menu .menu1 .entrees .box .txt h2 {
   line-height: normal;
   height: 21px;
 }
-main .menu .menu1 .entrees .box .txt .euro {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-main .menu .menu1 .entrees .box .txt .euro h3 {
+main .menu .menu1 .entrees .box .txt h3 {
   margin: 0px;
   overflow: hidden;
   color: #000;
@@ -200,26 +229,16 @@ main .menu .menu1 .entrees .box .txt .euro h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-main .menu .menu1 .entrees .box .txt .euro p {
-  color: #353535;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0%;
-  display: inline-block;
-  transition: transform 1s ease;
-  cursor: pointer;
-}
-main .menu .menu1 .entrees .box .txt .euro p:hover {
-  transform: translateX(-100px);
-}
 main .menu .menu1 #commander1 {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  cursor: pointer;
+  transition: all 450ms;
+}
+main .menu .menu1 #commander1:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
 }
 main .menu .menu1 #commander1 .commander {
   display: flex;
@@ -319,6 +338,9 @@ footer h1 {
   }
   main .menu .menu1 .box {
     width: 604px;
+  }
+  main .menu .menu1 .box .check:hover {
+    transform: translateX(0px);
   }
   footer {
     padding: 30px 25px;

@@ -123,6 +123,7 @@ main {
 
                 .fa-solidd {
                     background: linear-gradient(to bottom, #9356DC, #FF79DA);
+                    background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -197,12 +198,49 @@ main {
                         }
                         
                     }
-                    animation: boxfadein 2s ease-out;
+                    animation: boxfadein 3s ease-out;
+                    .checkk{
+                        display: none;
+                    }
                     .check{
-                        border-radius: 0px 15.043px 15.043px 0px  ;
-                        background-color:#63E6BE;
-                        width: 20px;
-                        transform: translateX(50px);
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        transform: translateX(45px);
+                        cursor: pointer;
+                        transition: transform 80ms ease-in-out 80ms;
+                        &:hover{
+                            transform: translateX(0px);
+
+                        }
+
+
+
+                        p {
+
+                            color: #353535;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 15.043px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            display: inline-block;
+                            height: 18px;
+                            margin-top: 42px;
+                        }
+                        .check1{
+                            position: relative;
+                            border-radius: 0px 15.043px 15.043px 0px  ;
+                            background-color:#63E6BE;
+                            width: 45px;
+                            .fa-circle-check{
+                                position: absolute;
+                                left: 13px;
+                                top: 34px;
+                            }
+
+                        }
                     }
 
 
@@ -214,6 +252,8 @@ main {
                         width: 100%;
                         gap: 5px;
                         margin: 15px;
+                        margin-right: 0px;
+                        overflow: hidden;
 
                         h2 {
                             margin: 0px;
@@ -231,10 +271,7 @@ main {
 
                         }
 
-                        .euro {
-                            display: flex;
-                            justify-content: space-between;
-                            flex-direction: row;
+                        
 
                           
                             h3 {
@@ -253,33 +290,8 @@ main {
                             }
 
 
-                            p {
-
-                                color: #353535;
-                                text-align: center;
-                                font-family: Roboto;
-                                font-size: 15.043px;
-                                font-style: normal;
-                                font-weight: 700;
-                                line-height: normal;
-                                margin: 0%;
-                                display: inline-block;
-                                transition: transform 1s ease;
-                                cursor: pointer;
-
-                                
-                                &:hover{
-                                    transform: translateX(-100px);
-                                      
-                                }
-                               
-                                
-                                
-
-
-                            }
-                        }
-
+                           
+                        
 
                     }
 
@@ -292,6 +304,12 @@ main {
                 display: flex;
                 justify-content: center;
                 margin-bottom: 40px;
+                cursor: pointer;
+                transition: all 450ms;
+                &:hover{
+                    transform: scale(1.02);
+                    opacity: 0.8;
+                }
 
                 .commander {
                     display: flex;
@@ -428,12 +446,22 @@ footer h1 {
 
                 .box {
                     width: 604px;
+                    .check{
+                        &:hover{
+                            transform: translateX(0px);
+
+                        }
+                    }
+                    
                 }
+
 
 
             }
         }
     }
+
+
 
     footer {
         padding: 30px 25px;
