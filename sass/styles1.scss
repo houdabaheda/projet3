@@ -22,7 +22,7 @@ header {
     padding-top: 14px;
     padding-bottom: 13px;
 
-    a {
+    & a {
         display: flex;
         height: 30px;
         width: 38px;
@@ -31,7 +31,7 @@ header {
         padding-left: 17px;
         
 
-        i {
+        & i {
             font-size: 20px;
             color: #101010;
 
