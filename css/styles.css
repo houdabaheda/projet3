@@ -72,7 +72,7 @@ header .headerh1 {
   padding-top: 14px;
   padding-bottom: 13px;
   position: relative;
-  background: var(--White, #FFF);
+  background: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 1025px) {
@@ -83,7 +83,7 @@ header .headerh1 {
   }
 }
 header .headerh1 h1 {
-  color: var(--Black, #101010);
+  color: #101010;
   text-align: center;
   font-family: Shrikhand;
   font-size: 30px;
@@ -106,7 +106,7 @@ header nav {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 header nav p {
-  color: var(--Grey, #353535);
+  color: #353535;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -114,7 +114,7 @@ header nav p {
   line-height: normal;
 }
 header nav i {
-  color: var(--Grey, #353535);
+  color: #353535;
 }
 
 .reserve {
@@ -132,7 +132,7 @@ header nav i {
 .reserve h1 {
   height: 68px;
   flex-shrink: 0;
-  color: #000;
+  color: #101010;
   text-align: center;
   font-family: Roboto;
   font-size: 24px;
@@ -157,7 +157,7 @@ header nav i {
 .reserve h2 {
   height: 46px;
   flex-shrink: 0;
-  color: var(--Grey, #353535);
+  color: #353535;
   text-align: center;
   font-family: Roboto;
   font-size: 18px;
@@ -205,7 +205,7 @@ header nav i {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--White, #FFF);
+  color: #FFF;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -239,7 +239,7 @@ header nav i {
 .fonctionnement h1 {
   height: 31px;
   flex-shrink: 0;
-  color: #000;
+  color: #101010;
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
@@ -293,7 +293,7 @@ header nav i {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  color: var(--White, #FFF);
+  color: #FFF;
   font-family: Roboto;
   font-size: 14.182px;
   font-style: normal;
@@ -333,7 +333,7 @@ header nav i {
 .fonctionnement .fonc .fon .fonc1 p {
   height: 15.67px;
   flex-shrink: 0;
-  color: #000;
+  color: #101010;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -365,7 +365,7 @@ header nav i {
   margin-left: 20px;
   margin-right: 80px;
   margin-bottom: 20px;
-  color: #000;
+  color: #101010;
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
@@ -482,7 +482,7 @@ header nav i {
 .card a .coeur .txt h1 {
   height: 20px;
   flex-shrink: 0;
-  color: #000;
+  color: #101010;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -493,7 +493,7 @@ header nav i {
 .card a .coeur .txt h2 {
   height: 24px;
   flex-shrink: 0;
-  color: #000;
+  color: #101010;
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
@@ -535,7 +535,7 @@ header nav i {
 }
 
 footer {
-  background-color: var(--Grey, #353535);
+  background-color: #353535;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 25px;
@@ -553,7 +553,7 @@ footer h1 {
   width: 137.582px;
   height: 27px;
   flex-shrink: 0;
-  color: var(--White, #FFF);
+  color: #FFF;
   font-family: Shrikhand;
   font-size: 18px;
   font-style: normal;
@@ -585,7 +585,7 @@ footer .contact .devenir {
   align-items: center;
 }
 footer .contact p {
-  color: var(--White, #FFF);
+  color: #FFF;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
