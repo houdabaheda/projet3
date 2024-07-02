@@ -62,11 +62,27 @@ main img {
   object-fit: cover;
   object-position: 40% 100%;
 }
+@media (min-width: 1025px) {
+  main img {
+    height: 393.66px;
+    object-position: 43% 71%;
+  }
+}
 main .menu {
   width: 100%;
   margin-top: -53px;
   border-radius: 40px 40px 0px 0px;
   background: var(--Background, #F6F6F6);
+}
+@media (min-width: 1025px) {
+  main .menu {
+    display: flex;
+    width: 74%;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
 }
 main .menu .la-palette {
   margin-top: 37px;
@@ -76,6 +92,15 @@ main .menu .la-palette {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+@media (min-width: 1025px) {
+  main .menu .la-palette {
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+    margin-bottom: 40px;
+    gap: 24px;
+  }
 }
 main .menu .la-palette h1 {
   color: var(--Black, #101010);
@@ -88,6 +113,14 @@ main .menu .la-palette h1 {
 }
 main .menu .la-palette .icon-heart {
   display: none;
+}
+main .menu .la-palette .icon-heart:checked + .icon .fa-regular {
+  display: none;
+  /* Hide the default icon when checked */
+}
+main .menu .la-palette .icon-heart:checked + .icon .fa-solid {
+  display: inline;
+  /* Show the alternate icon when checked */
 }
 main .menu .la-palette .icon {
   cursor: pointer;
@@ -102,18 +135,7 @@ main .menu .la-palette .icon .fa-solidd {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-main .menu .la-palette .icon-heart:checked + .icon .fa-regular {
   display: none;
-  /* Hide the default icon when checked */
-}
-main .menu .la-palette .icon-heart:checked + .icon .fa-solid {
-  display: inline;
-  /* Show the alternate icon when checked */
-}
-main .menu .la-palette .icon .fa-solid {
-  display: none;
-  /* Hide the alternate icon by default */
 }
 main .menu .menu1 {
   display: flex;
@@ -121,6 +143,11 @@ main .menu .menu1 {
   gap: 40px;
   margin-left: 13px;
   margin-right: 13px;
+}
+@media (min-width: 1025px) {
+  main .menu .menu1 {
+    margin: auto;
+  }
 }
 main .menu .menu1 .entrees {
   display: flex;
@@ -150,6 +177,11 @@ main .menu .menu1 .entrees .box {
   justify-content: space-between;
   animation: boxfadein 3s ease-out;
 }
+@media (min-width: 1025px) {
+  main .menu .menu1 .entrees .box {
+    width: 604px;
+  }
+}
 @keyframes boxfadein {
   0% {
     opacity: 0.3;
@@ -157,9 +189,6 @@ main .menu .menu1 .entrees .box {
   100% {
     opacity: 1;
   }
-}
-main .menu .menu1 .entrees .box .checkk {
-  display: none;
 }
 main .menu .menu1 .entrees .box .check {
   display: flex;
@@ -194,6 +223,7 @@ main .menu .menu1 .entrees .box .check .check1 .fa-circle-check {
   position: absolute;
   left: 13px;
   top: 34px;
+  color: #faf9f9;
 }
 main .menu .menu1 .entrees .box .txt {
   display: flex;
@@ -268,12 +298,14 @@ footer {
   padding-left: 25px;
   padding-right: 25px;
 }
-
-footer .fa-solid {
-  font-size: 13px;
-  color: white;
+@media (min-width: 1025px) {
+  footer {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
 }
-
 footer h1 {
   width: 137.582px;
   height: 27px;
@@ -287,14 +319,29 @@ footer h1 {
   margin-bottom: 16px;
   margin-top: 0px;
 }
-
-.contact {
+@media (min-width: 1025px) {
+  footer h1 {
+    margin: 0px;
+  }
+}
+footer .contact {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-
-.contact h5 {
+@media (min-width: 1025px) {
+  footer .contact {
+    flex-direction: row;
+  }
+}
+footer .contact .proposer,
+footer .contact .devenir {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+}
+footer .contact p {
   color: var(--White, #FFF);
   font-family: Roboto;
   font-size: 16px;
@@ -304,64 +351,18 @@ footer h1 {
   width: 168px;
   margin: 0px;
 }
-
-.proposer,
-.devenir {
-  display: flex;
-  flex-direction: row;
-  gap: 11px;
-  align-items: center;
-}
-
 @media (min-width: 1025px) {
-  main img {
-    height: 393.66px;
-    object-position: 43% 71%;
-  }
-  main .menu {
-    display: flex;
-    width: 74%;
-    max-width: 1055px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-  }
-  main .menu .la-palette {
-    display: flex;
-    justify-content: center;
-    margin-top: 51px;
-    margin-bottom: 40px;
-    gap: 24px;
-  }
-  main .menu .menu1 {
-    margin: auto;
-  }
-  main .menu .menu1 .box {
-    width: 604px;
-  }
-  main .menu .menu1 .box .check:hover {
-    transform: translateX(0px);
-  }
-  footer {
-    padding: 30px 25px;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 16px;
-  }
-  footer h1 {
-    margin: 0px;
-  }
-  footer .contact {
-    flex-direction: row;
-  }
-  footer .contact h5 {
+  footer .contact p {
     display: flex;
     align-items: center;
   }
-  footer #contact-p {
-    display: flex;
-    align-items: center;
-  }
+}
+footer .contact i {
+  font-size: 13px;
+  color: white;
+}
+footer .contact .fa-handshake-simple {
+  rotate: 300deg;
 }
 
 /*# sourceMappingURL=styles1.css.map */

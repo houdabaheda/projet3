@@ -1,14 +1,10 @@
 body {
     margin: 0px;
-
-
 }
-
 
 .main-container {
     padding: 0px;
     width: 100%;
-
 }
 
 a {
@@ -22,20 +18,17 @@ header {
     padding-top: 14px;
     padding-bottom: 13px;
 
-    & a {
+    a {
         display: flex;
         height: 30px;
         width: 38px;
         justify-content: center;
         align-items: center;
         padding-left: 17px;
-        
 
-        & i {
+        i {
             font-size: 20px;
             color: #101010;
-
-
         }
     }
 
@@ -75,6 +68,10 @@ main {
         height: 275px;
         object-fit: cover;
         object-position: 40% 100%;
+        @media (min-width: 1025px){
+            height: 393.66px;
+            object-position: 43% 71%;
+        }
 
     }
 
@@ -84,6 +81,14 @@ main {
         margin-top: -53px;
         border-radius: 40px 40px 0px 0px;
         background: var(--Background, #F6F6F6);
+        @media (min-width: 1025px){
+            display: flex;
+            width: 74%;
+            max-width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+        }
 
         .la-palette {
             margin-top: 37px;
@@ -93,6 +98,13 @@ main {
             display: flex;
             flex-direction: row;
             gap: 30px;
+            @media (min-width: 1025px){
+                display: flex;
+                justify-content: center;
+                margin-top: 51px;
+                margin-bottom: 40px;
+                gap: 24px;
+            }
 
             h1 {
                 color: var(--Black, #101010);
@@ -107,6 +119,17 @@ main {
 
             .icon-heart {
                 display: none;
+
+                &:checked+.icon .fa-regular {
+                    display: none;
+                    /* Hide the default icon when checked */
+                }
+
+                &:checked+.icon .fa-solid {
+                    display: inline;
+                    /* Show the alternate icon when checked */
+                }
+
             }
 
             .icon {
@@ -126,29 +149,11 @@ main {
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    display: none;
+
                 }
 
             }
-
-            .icon-heart:checked+.icon .fa-regular {
-                display: none;
-                /* Hide the default icon when checked */
-            }
-
-            .icon-heart:checked+.icon .fa-solid {
-                display: inline;
-                /* Show the alternate icon when checked */
-            }
-
-            .icon .fa-solid {
-                display: none;
-                /* Hide the alternate icon by default */
-            }
-
-
-
-
-
         }
 
         .menu1 {
@@ -157,6 +162,10 @@ main {
             gap: 40px;
             margin-left: 13px;
             margin-right: 13px;
+            @media (min-width: 1025px){
+                margin: auto;
+
+            }
 
             .entrees {
                 display: flex;
@@ -164,7 +173,6 @@ main {
                 gap: 12px;
 
                 h1 {
-
                     color: #000;
                     font-family: Roboto;
                     font-size: 16px;
@@ -178,38 +186,39 @@ main {
                     margin: 0px;
                 }
 
-              
-
                 .box {
                     overflow: hidden;
                     position: relative;
-
                     border-radius: 15.043px;
                     background: var(--White, #FFF);
                     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
                     display: flex;
                     justify-content: space-between;
+                    @media (min-width: 1025px){
+                        width: 604px;
+                    }
+
                     @keyframes boxfadein {
-                        0%{
+                        0% {
                             opacity: 0.3;
                         }
-                        100%{
+
+                        100% {
                             opacity: 1;
                         }
-                        
                     }
+
                     animation: boxfadein 3s ease-out;
-                    .checkk{
-                        display: none;
-                    }
-                    .check{
+
+                    .check {
                         display: flex;
                         flex-direction: row;
                         gap: 15px;
                         transform: translateX(45px);
                         cursor: pointer;
                         transition: transform 80ms ease-in-out 80ms;
-                        &:hover{
+
+                        &:hover {
                             transform: translateX(0px);
 
                         }
@@ -229,22 +238,22 @@ main {
                             height: 18px;
                             margin-top: 42px;
                         }
-                        .check1{
+
+                        .check1 {
                             position: relative;
-                            border-radius: 0px 15.043px 15.043px 0px  ;
-                            background-color:#63E6BE;
+                            border-radius: 0px 15.043px 15.043px 0px;
+                            background-color: #63E6BE;
                             width: 45px;
-                            .fa-circle-check{
+
+                            .fa-circle-check {
                                 position: absolute;
                                 left: 13px;
                                 top: 34px;
+                                color: #faf9f9;
                             }
 
                         }
                     }
-
-
-                    
 
                     .txt {
                         display: flex;
@@ -271,27 +280,27 @@ main {
 
                         }
 
-                        
-
-                          
-                            h3 {
-                                margin: 0px;
-                                overflow: hidden;
-                                color: #000;
-                                font-family: Roboto;
-                                font-size: 15.043px;
-                                font-style: normal;
-                                font-weight: 300;
-                                line-height: normal;
-                                text-overflow: ellipsis;
-                                white-space: nowrap;
 
 
-                            }
+
+                        h3 {
+                            margin: 0px;
+                            overflow: hidden;
+                            color: #000;
+                            font-family: Roboto;
+                            font-size: 15.043px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
 
 
-                           
-                        
+                        }
+
+
+
+
 
                     }
 
@@ -306,7 +315,8 @@ main {
                 margin-bottom: 40px;
                 cursor: pointer;
                 transition: all 450ms;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.02);
                     opacity: 0.8;
                 }
@@ -336,31 +346,10 @@ main {
 
 
             }
-
-
-
-
-
-
-
         }
     }
 
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
 footer {
     background-color: var(--Grey, #353535);
     padding-top: 22px;
@@ -368,128 +357,73 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
 
-}
-
-footer .fa-solid {
-    font-size: 13px;
-    color: white;
-}
-
-footer h1 {
-    width: 137.582px;
-    height: 27px;
-    flex-shrink: 0;
-    color: var(--White, #FFF);
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 16px;
-    margin-top: 0px;
-
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.contact h5 {
-    color: var(--White, #FFF);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 168px;
-    margin: 0px;
-}
-
-.proposer,
-.devenir {
-    display: flex;
-    flex-direction: row;
-    gap: 11px;
-    align-items: center;
-
-}
-
-
-@media (min-width: 1025px) {
-    main {
-        img {
-            height: 393.66px;
-            object-position: 43% 71%;
-        }
-
-        .menu {
-            display: flex;
-            width: 74%;
-            max-width: 1055px;
-            margin-left: auto;
-            margin-right: auto;
-            flex-direction: column;
-
-            .la-palette {
-                display: flex;
-                justify-content: center;
-                margin-top: 51px;
-                margin-bottom: 40px;
-                gap: 24px;
-            }
-
-            .menu1 {
-                margin: auto;
-
-
-                .box {
-                    width: 604px;
-                    .check{
-                        &:hover{
-                            transform: translateX(0px);
-
-                        }
-                    }
-                    
-                }
-
-
-
-            }
-        }
-    }
-
-
-
-    footer {
+    @media (min-width: 1025px) {
         padding: 30px 25px;
         display: flex;
         flex-direction: row-reverse;
         gap: 16px;
+    }
 
+    h1 {
+        width: 137.582px;
+        height: 27px;
+        flex-shrink: 0;
+        color: var(--White, #FFF);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+        margin-top: 0px;
 
-        h1 {
+        @media (min-width: 1025px) {
             margin: 0px;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        @media (min-width: 1025px) {
+            flex-direction: row;
+        }
+
+        .proposer,
+        .devenir {
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+            align-items: center;
 
         }
 
+        p {
+            color: var(--White, #FFF);
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: 168px;
+            margin: 0px;
 
-        .contact {
-            flex-direction: row;
-
-            h5 {
+            @media (min-width: 1025px) {
                 display: flex;
                 align-items: center;
             }
         }
-
-        #contact-p {
-            display: flex;
-            align-items: center;
-
+        i {
+            font-size: 13px;
+            color: white;
         }
+        .fa-handshake-simple{
+            rotate: 300deg;
+        }
+
+        
     }
 
 }
