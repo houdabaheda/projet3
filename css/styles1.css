@@ -341,7 +341,7 @@ footer .contact .devenir {
   gap: 11px;
   align-items: center;
 }
-footer .contact p {
+footer .contact p, footer .contact a {
   color: var(--White, #FFF);
   font-family: Roboto;
   font-size: 16px;
@@ -352,7 +352,7 @@ footer .contact p {
   margin: 0px;
 }
 @media (min-width: 1025px) {
-  footer .contact p {
+  footer .contact p, footer .contact a {
     display: flex;
     align-items: center;
   }
