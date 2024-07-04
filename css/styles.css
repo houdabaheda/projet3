@@ -495,36 +495,36 @@ header nav i {
   line-height: normal;
   margin: 0px;
 }
-.card a .coeur .icon-heart {
+.card .icon-heart {
   display: none;
 }
-.card a .coeur .icon-heart:checked + .icon .fa-regular {
+.card .icon-heart:checked + .icon .fa-regular {
   display: none;
 }
-.card a .coeur .icon-heart:checked + .icon .fa-solid {
+.card .icon-heart:checked + .icon .fa-solid {
   display: inline;
 }
-.card a .coeur .icon {
+.card .icon {
   cursor: pointer;
 }
-.card a .coeur .icon .fa-solid {
+.card .icon .fa-solid {
   display: flex;
   font-size: 22px;
   position: absolute;
   right: 28px;
-  top: 23px;
+  top: 202px;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: none;
 }
-.card a .coeur .icon .fa-regular {
+.card .icon .fa-regular {
   display: flex;
   font-size: 22px;
   position: absolute;
   right: 28px;
-  top: 23px;
+  top: 202px;
   color: #101010;
 }
 

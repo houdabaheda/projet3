@@ -547,48 +547,51 @@ header {
 
             }
 
-            .icon-heart {
-                display: none;
+            
 
-                &:checked+.icon .fa-regular {
-                    display: none;
+            
 
-                }
+        }
 
-                &:checked+.icon .fa-solid {
-                    display: inline;
-                }
+    }
+    .icon-heart {
+        display: none;
 
-            }
+        &:checked+.icon .fa-regular {
+            display: none;
 
-            .icon {
-                cursor: pointer;
+        }
 
-                .fa-solid {
-                    display: flex;
-                    font-size: 22px;
-                    position: absolute;
-                    right: 28px;
-                    top: 23px;
-                    background: linear-gradient(to bottom, #9356DC, #FF79DA);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    display: none;
-                }
+        &:checked+.icon .fa-solid {
+            display: inline;
+        }
 
-                .fa-regular {
+    }
 
-                    display: flex;
-                    font-size: 22px;
-                    position: absolute;
-                    right: 28px;
-                    top: 23px;
-                    color: $noir;
+    .icon {
+        cursor: pointer;
 
-                }
+        .fa-solid {
+            display: flex;
+            font-size: 22px;
+            position: absolute;
+            right: 28px;
+            top: 202px;
+            background: linear-gradient(to bottom, #9356DC, #FF79DA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: none;
+        }
 
-            }
+        .fa-regular {
+
+            display: flex;
+            font-size: 22px;
+            position: absolute;
+            right: 28px;
+            top: 202px;
+            color: $noir;
 
         }
 
