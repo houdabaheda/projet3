@@ -362,7 +362,7 @@ footer .contact i {
   color: white;
 }
 footer .contact .fa-handshake-simple {
-  rotate: 300deg;
+  transform: rotate(300deg);
 }
 
 /*# sourceMappingURL=styles1.css.map */
